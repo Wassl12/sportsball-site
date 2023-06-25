@@ -1,5 +1,4 @@
 function Standings() {
-
     return (
         <div>
             Standings

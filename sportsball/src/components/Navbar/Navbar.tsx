@@ -1,16 +1,28 @@
+import { Link } from "react-router-dom";
 import { NavProps } from "./types"
+import football from "../../static/football.png"
 
 function Navbar({ navProps }: { navProps: NavProps }) {
 
     return (
         <nav className="navbar navbar-expand navbar-dark bg-dark">
-            <div className="container">
-                <a className="navbar-brand" href="#">My Navbar</a>
-                <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span className="navbar-toggler-icon"></span>
-                </button>
+            <div style={{ position: "fixed", left: 20 }}>
+                <Link className="nav-link" to='/home'>
+                    <img src={football} alt="Fodebull" width="50" />
+                </Link>
             </div>
-        </nav>
+            <div className="container">
+                <div className="collapse navbar-collapse" id="navbarNav">
+                    <ul className="navbar-nav ml-auto">
+                        {navProps.links.map((elt, index) => (
+                            <li className="nav-item" key={index}>
+                                <Link className="nav-link" to={elt.route}>{elt.label}</Link>
+                            </li>
+                        ))}
+                    </ul>
+                </div>
+            </div>
+        </nav >
     )
 }
 
