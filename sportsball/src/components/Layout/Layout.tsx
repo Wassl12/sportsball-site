@@ -1,6 +1,5 @@
-import { Component, Fragment } from "react";
-import { Route, Routes, RouteProps } from "react-router-dom";
-import { NavProp } from "../Navbar/types";
+import { Fragment } from "react";
+import { Route, Routes } from "react-router-dom";
 import Forums from "../Forums/Forums";
 import Navbar from "../Navbar/Navbar";
 import Standings from "../Standings/Standings";

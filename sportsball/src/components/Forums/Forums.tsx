@@ -1,4 +1,4 @@
-const Forums = (props: any) => {
+function Forums() {
     return <div>Forums</div>
 }
 
