@@ -1,6 +1,4 @@
-export interface NavProps {
-    links: {
-        route: string;
-        label: string;
-    }[];
+export interface NavProp {
+    route: string;
+    label: string;
 }
