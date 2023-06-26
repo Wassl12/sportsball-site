@@ -7,7 +7,7 @@ function ViewAll() {
             author: 'BuckeyeFan1975', message: angryBuckeye, timestamp: Date.UTC(2020, 1), id: 1
         },
         {
-            author: 'Tyler', message: angryRollTide, timestamp: Date.UTC(2020, 2), id: 2
+            author: 'RollTide1957', message: angryRollTide, timestamp: Date.UTC(2020, 2), id: 2
         },
         { author: 'Joe', message: angryWolverine, timestamp: Date.UTC(2020, 3), id: 3 },
         { author: 'Joe', message: relievedWolverine, timestamp: Date.UTC(2020, 4), id: 4 },
@@ -21,7 +21,7 @@ function ViewAll() {
                     <div className="card-body">
                         <h5 className="card-title">{post.author}</h5>
                         <p className="card-text">{post.message}</p>
-                        <Link to={`view/${post.id.toString()}`} className="btn btn-primary" style={{ width: "5em" }}>View</Link>
+                        <Link to={`view/${post.id.toString()}`} className="btn btn-dark" style={{ width: "5em" }}>View</Link>
                     </div>
                 </div>;
 
