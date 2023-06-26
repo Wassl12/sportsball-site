@@ -1,12 +1,11 @@
 import { Link, Outlet } from "react-router-dom";
 import { NavProp } from "./types"
 import football from "../../static/football.png"
-import { Fragment } from "react";
 
 function Navbar({ navProps }: { navProps: NavProp[] }) {
 
     return (
-        <Fragment>
+        <>
             <nav className="navbar navbar-expand navbar-dark bg-dark">
                 <div style={{ position: "fixed", left: 20 }}>
                     <Link className="nav-link" to='/home'>
@@ -26,7 +25,7 @@ function Navbar({ navProps }: { navProps: NavProp[] }) {
                 </div>
             </nav >
             <Outlet />
-        </Fragment>
+        </>
     )
 }
 

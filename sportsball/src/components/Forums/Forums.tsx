@@ -1,5 +1,11 @@
+import { Outlet } from "react-router-dom";
+
+
 function Forums() {
-    return <div>Forums</div>
+
+    return <>
+        <Outlet />
+    </>
 }
 
 export default Forums;
