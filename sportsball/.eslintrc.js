@@ -1,38 +1,30 @@
 module.exports = {
-    root: true,
-    parser: '@typescript-eslint/parser',
-    plugins: ['@typescript-eslint', 'react', 'react-hooks', 'prettier'],
     extends: [
+        // By extending from a plugin config, we can get recommended rules without having to add them manually.
         'eslint:recommended',
-        'plugin:@typescript-eslint/recommended',
         'plugin:react/recommended',
-        'plugin:react-hooks/recommended',
-        "plugin:react/jsx-runtime",
-        'prettier',
+        'plugin:import/recommended',
+        'plugin:jsx-a11y/recommended',
+        'plugin:@typescript-eslint/recommended',
+        'plugin:react/jsx-runtime',
+        // This disables the formatting rules in ESLint that Prettier is going to be responsible for handling.
+        // Make sure it's always the last config, so it gets the chance to override other configs.
+        'eslint-config-prettier',
     ],
-    parserOptions: {
-        ecmaFeatures: {
-            jsx: true,
-        },
-        ecmaVersion: 2021,
-        sourceType: 'module',
-    },
-    env: {
-        browser: true,
-        node: true,
-        es6: true,
-    },
-    rules: {
-        // Add any additional rules specific to your project
-    },
     settings: {
         react: {
+            // Tells eslint-plugin-react to automatically detect the version of React to use.
             version: 'detect',
         },
+        // Tells eslint how to resolve imports
         'import/resolver': {
-            'node': {
-                'extensions': ['.js', '.jsx', '.ts', '.tsx']
-            }
-        }
+            node: {
+                paths: ['src'],
+                extensions: ['.js', '.jsx', '.ts', '.tsx'],
+            },
+        },
+    },
+    rules: {
+        // Add your own rules here to override ones from the extended configs.
     },
 };
