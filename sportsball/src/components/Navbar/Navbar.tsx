@@ -2,6 +2,20 @@ import { Link, Outlet } from "react-router-dom";
 import { NavProp } from "./types"
 import football from "../../static/football.png"
 
+function LogFunctionButton() {
+    let userLoggedIn = true;
+    let loginButton;        
+    if(userLoggedIn){
+            loginButton = "Logout.";
+        }
+        else{ 
+            loginButton = "Login or create an account.";
+        }
+    return (
+        <button type="button" className="LogFunctionButton" style={{marginRight:"10px"}}>{loginButton}</button>
+    )
+}
+
 function Navbar({ navProps }: { navProps: NavProp[] }) {
 
     return (
@@ -23,6 +37,7 @@ function Navbar({ navProps }: { navProps: NavProp[] }) {
                         </ul>
                     </div>
                 </div>
+                <LogFunctionButton/>
             </nav >
             <Outlet />
         </>

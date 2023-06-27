@@ -7,6 +7,7 @@ import About from "../About/About";
 import viewOne from "../Forums/ViewOne/ViewOne";
 import viewAll from "../Forums/ViewAll/ViewAll";
 
+
 function Layout() {
     const navLinks = [
         { route: '/predictions', label: 'Predictions', Component: Predictions },
@@ -28,6 +29,7 @@ function Layout() {
                     <Route path="about" Component={About} />
                 </Route>
             </Routes>
+            
         </>
 
     )

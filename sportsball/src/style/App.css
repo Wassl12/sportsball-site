@@ -22,6 +22,7 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  
 }
 
 .App-link {
@@ -55,3 +56,4 @@
 .em-icons.e-file::before{
   content: '\e700';
 }
+
