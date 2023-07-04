@@ -1,0 +1,68 @@
+[
+    {
+      "username": "BulldogFan",
+      "collegeFootballTeam": "University of Georgia",
+      "email": "bulldogfan@example.com"
+    },
+    {
+      "username": "TigerFan",
+      "collegeFootballTeam": "Clemson University",
+      "email": "tigerfan@example.com"
+    },
+    {
+      "username": "BuckeyeFan",
+      "collegeFootballTeam": "Ohio State University",
+      "email": "buckeyefan@example.com"
+    },
+    {
+      "username": "SeminoleFan",
+      "collegeFootballTeam": "Florida State University",
+      "email": "seminolefan@example.com"
+    },
+    {
+      "username": "LonghornFan",
+      "collegeFootballTeam": "University of Texas at Austin",
+      "email": "longhornfan@example.com"
+    },
+    {
+      "username": "TrojanFan",
+      "collegeFootballTeam": "University of Southern California",
+      "email": "trojanfan@example.com"
+    },
+    {
+      "username": "CrimsonTideFan",
+      "collegeFootballTeam": "University of Alabama",
+      "email": "crimsontidefan@example.com"
+    },
+    {
+      "username": "TigerFan2",
+      "collegeFootballTeam": "Louisiana State University",
+      "email": "tigerfan2@example.com"
+    },
+    {
+      "username": "GatorFan",
+      "collegeFootballTeam": "University of Florida",
+      "email": "gatorfan@example.com"
+    },
+    {
+      "username": "SoonerFan",
+      "collegeFootballTeam": "University of Oklahoma",
+      "email": "soonerfan@example.com"
+    },
+    {
+      "username": "BadgerFan",
+      "collegeFootballTeam": "University of Wisconsin-Madison",
+      "email": "badgerfan@example.com"
+    },
+    {
+      "username": "DuckFan",
+      "collegeFootballTeam": "University of Oregon",
+      "email": "duckfan@example.com"
+    },
+    {
+      "username": "BisonFan",
+      "collegeFootballTeam": "North Dakota State University",
+      "email": "bisonfan@example.com"
+    }
+]
+  
