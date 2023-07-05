@@ -3,16 +3,9 @@ import { NavProp } from "./types"
 import football from "../../static/football.png"
 
 function LogFunctionButton() {
-    let userLoggedIn = true;
-    let loginButton;        
-    if(userLoggedIn){
-            loginButton = "Logout.";
-        }
-        else{ 
-            loginButton = "Login or create an account.";
-        }
+    let userLoggedIn = false;
     return (
-        <button type="button" className="LogFunctionButton" style={{marginRight:"10px"}}>{loginButton}</button>
+        <Link className="nav-link" to={userLoggedIn ? "/logout" : "/login"}>{userLoggedIn ? "Logout" : "Login"}</Link>
     )
 }
 
@@ -28,16 +21,20 @@ function Navbar({ navProps }: { navProps: NavProp[] }) {
                 </div>
                 <div className="container">
                     <div className="collapse navbar-collapse" id="navbarNav">
-                        <ul className="navbar-nav ml-auto">
+                        <ul className="navbar-nav me-auto">
                             {navProps.map((elt, index) => (
                                 <li className="nav-item" key={index}>
                                     <Link className="nav-link" to={elt.route}>{elt.label}</Link>
                                 </li>
                             ))}
                         </ul>
+                        <ul className="navbar-nav ms-auto">
+                            <li>
+                                <LogFunctionButton/>
+                            </li>
+                        </ul>
                     </div>
                 </div>
-                <LogFunctionButton/>
             </nav >
             <Outlet />
         </>
