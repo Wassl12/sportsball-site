@@ -21,13 +21,15 @@ function Navbar({ navProps }: { navProps: NavProp[] }) {
                 </div>
                 <div className="container">
                     <div className="collapse navbar-collapse" id="navbarNav">
-                        <ul className="navbar-nav me-auto">
-                            {navProps.map((elt, index) => (
-                                <li className="nav-item" key={index}>
-                                    <Link className="nav-link" to={elt.route}>{elt.label}</Link>
-                                </li>
-                            ))}
-                        </ul>
+                        <div style={{ position: "fixed", left: 100 }}>
+                            <ul className="navbar-nav me-auto">
+                                {navProps.map((elt, index) => (
+                                    <li className="nav-item" key={index}>
+                                        <Link className="nav-link" to={elt.route}>{elt.label}</Link>
+                                    </li>
+                                ))}
+                            </ul>
+                            </div>
                         <ul className="navbar-nav ms-auto">
                             <li>
                                 <LogFunctionButton/>
