@@ -1,3 +1,3 @@
 # Frontend for Sportsball site
 
-React frontend for displaying information on sports analytics.
+Website for sports analytics, stats and predictions.
